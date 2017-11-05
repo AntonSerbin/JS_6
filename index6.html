@@ -9,7 +9,7 @@
 <body>
 <p><b>Задача 1.</b> Выведите координаты мыши относительно блока в момент
 движения курсора мыши внутри блока. Координаты выводить под блоком.</p>
-<div onmousemove="myFunction(event)" id="squareTask1" class="square1">
+<div id="squareTask1" class="square1">
 </div>
 <p id="coordinatesTask1"> Coordinates: </p>
 
@@ -18,7 +18,7 @@
 изображение закрытой папки. Добавьте событие, которое выполняется при
 двойном клике на блоке и заменяет фон блока на изображение открытой
 папки.</p>
-<div ondblclick="myFunction2()" id="squareTask2" class="square2">
+<div id="squareTask2" class="square2 opened">
 </div>
 
 <!-- end Task2	 -->
@@ -29,9 +29,10 @@
 скруглять данные блоки с помощью border-radius до круга. (Для
 замедления эффекта скругления в CSS можно добавить transition).</p>
 
-<div id="squareTask3" class="square3"></div>
+<div id="squareTask3" class="square3 "></div>
 
 <!-- end Task3	 -->
+
 
 <p><b>Задача 4.</b> Создайте div размерами ширина – 100%, высота 250px. Ниже
 добавьте 4-5 изображений с одинаковыми классами, разного размера.
@@ -47,12 +48,10 @@
 
 
 <!-- end Task4	 -->
-
-<p><b>Задача 5.</b> Создайте блок размерами 50x50px. Добавьте событие клик, так,
-что при каждом клике на блоке он отодвигается на 100px вниз от
+<p><b>Задача 5.</b> Создайте блок размерами 50x50px. Добавьте событие клик, так, что при каждом клике на блоке он отодвигается на 100px вниз от
 предыдущего положения.</p>
 <p style="color: grey"> Right click = 100px right, Left click = 100 px left (так визуально лучше)</p>
-<div id="square5" class="square5" oncontextmenu="moveRightClickTask5(this);return false" onclick="moveLeftClickTask5(this)" ></div>
+<div id="square5" class="square5" ></div>
 <!-- end Task 5	 -->
 
 <p><b>Задача 6.</b> РЕАЛИЗУЙТЕ ТРИГГЕР ПЕРЕКЛЮЧАТЕЛЬ Реализуйте
@@ -67,7 +66,7 @@
 выводится 0.</p>
 
 <div class="block6">
-	<div class="orangeBlock6" onclick="myFunction6(this)"></div>
+	<div id="orangeBlock6" class="orangeBlock6"></div>
 </div>
 <p id="result6">Result: </p>
 

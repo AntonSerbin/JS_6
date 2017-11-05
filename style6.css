@@ -1,4 +1,5 @@
-* {margin: 0; padding: 0}
+* {margin: 0; padding: 0; transition: all 0.35s;
+}
 
 div, img {cursor: pointer;}
 
@@ -12,6 +13,8 @@ div, img {cursor: pointer;}
 		border: 2px solid black;
 		background-image: url('2_closed.jpg');
 		}	
+.opened {background-image: url('2_opened.jpg');}
+
 
 .square3 {width: 900px;
 		height: 300px;
@@ -20,10 +23,19 @@ div, img {cursor: pointer;}
 		flex-wrap: wrap;
 		}
 
+
 .squareSmallTask3 {width: 28px;
 		height: 28px;
 		border: 1px solid grey;
+		/*border-radius: 0%;
+		border-color: black;*/
 			}
+
+.roundSmallTask3 {
+			transition: all 0.35s;
+			border-radius: 50%;
+			border-color: cyan;
+}
 
 .square4 {width: 99%;
 		height: 250px;
@@ -38,6 +50,8 @@ div, img {cursor: pointer;}
 		background: #850000;
 		position: relative;
       	left: 500px;
+		transition: all 0.75s;
+
 
 			}
 
